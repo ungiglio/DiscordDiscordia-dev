@@ -3,7 +3,7 @@
  * @author ungiglio
  * @version 25.1
  * @description Un tema trasparente, modulare e altamente personalizzabile.
- * @source https://github.com/ungiglio/DiscordDiscordia
+ * @source https://github.com/ungiglio/DiscordDiscordia-dev
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
@@ -15,7 +15,7 @@
 :root {
     /* --- BACKGROUND AND IMAGES --- */
     /* Background Image */
-    --custom-image-url: url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/assets/bgImg.jpg");
+    --custom-image-url: url("https://ungiglio.github.io/DiscordDiscordia-dev-dev/awkglass_code/assets/bgImg.jpg");
     /* Image blur (default: 8px) */
     --app-blur: 8px;
     
@@ -35,8 +35,8 @@
     --custom-title-text: "Lande della Discordia";
 
     /* Home/DM Icon (Discord logo left top) */
-    --custom-logo: url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/assets/LandeDiscordia.png");            /* normal */
-    --custom-logo-hover: url("https://ungiglio.github.io/DiscordDiscordia/awkglass_code/assets/LandeDiscordiaHover.png"); /* on hover */
+    --custom-logo: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/LandeDiscordia.png");            /* normal */
+    --custom-logo-hover: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/LandeDiscordiaHover.png"); /* on hover */
 }
 
 /* ======================================================================== */
