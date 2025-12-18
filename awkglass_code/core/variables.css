@@ -1,18 +1,18 @@
-/* CORE: VARIABLES */
+/* * CORE: VARIABLES (FIX COLORI & FONT) */
 
 :root,
 .theme-dark,
 .theme-light {
 
-    --file-ver: "#20251218-SemanticFix";
+    --file-ver: "#20251218";
 
     /* --- MAPPING VARIABILI UTENTE --- */
     --background-image: var(--custom-image-url);
 
-    /* --- FIX VARIABILI & COLORI --- */
-    --darkPurple-background: rgba(30, 2, 46, 0.85) !important; 
+    /* --- FIX COLORI (Il problema del nero) --- */
+    --darkPurple-background: rgba(30, 2, 46, 0.95) !important; 
     
-    /* Variabili Categorie (Default) */
+    /* Variabili Categorie */
     --cat-custom-color: var(--highlight);
     --cat-custom-color-rgba: var(--rgb-highlight);
 
@@ -45,25 +45,23 @@
     /* --- SCROLLBARS --- */
     --scrollbar-thin-thumb: var(--highlight) !important;
     --scrollbar-auto-thumb: var(--highlight) !important;
-
-    /* 1. TESTI (Font Colors) */
-    --text-normal: rgb(230, 230, 230) !important;      /* Testo principale (chiaro) */
-    --text-muted: rgb(160, 160, 160) !important;       /* Testo secondario (grigio) */
-    --text-header: white !important;                   /* Titoli (Bianco puro) */
-    --text-channel-normal: rgb(150, 150, 150) !important; /* Nome canali non letti/inattivi */
-    --text-channel-hover: white !important;            /* Nome canali al passaggio del mouse */
     
-    /* 2. ICONE (SVG Fills) */
-    --icon-default: rgb(180, 180, 180) !important;     /* Icone standard (hash, ingranaggi) */
-    --icon-hover: white !important;                    /* Icone attive/hover */
+    /* --- GESTIONE SEMANTICA COLORI --- */
+    --text-normal: rgb(230, 230, 230) !important;
+    --text-muted: rgb(160, 160, 160) !important;
+    --text-header: white !important;
+    --text-channel-normal: rgb(150, 150, 150) !important;
+    --text-channel-hover: white !important;
     
-    /* 3. BORDI E LINEE (Dividers) */
-    --border-subtle: rgba(255, 255, 255, 0.15) !important; /* Linee sottili, bordi messaggi */
-    --border-strong: rgba(255, 255, 255, 0.4) !important;  /* Bordi evidenziati */
+    --icon-default: rgb(180, 180, 180) !important;
+    --icon-hover: white !important;
+    
+    --border-subtle: rgba(255, 255, 255, 0.15) !important;
+    --border-strong: rgba(255, 255, 255, 0.4) !important;
 
-    /* Mapping vecchie variabili (per compatibilità) su quelle nuove */
+    /* Mapping Compatibilità */
     --channels-default: var(--text-channel-normal) !important;
-    --channel-icon: var(--icon-default) !important; /* Ora channel-icon è SOLO per le icone */
+    --channel-icon: var(--icon-default) !important;
     --interactive-normal: var(--icon-default) !important;
     --interactive-hover: var(--icon-hover) !important;
     --interactive-muted: rgba(180, 180, 180, 0.5) !important;
@@ -74,7 +72,7 @@
     --bg-brand: var(--highlight) !important;
     --background-brand: var(--highlight) !important;
 
-    /* --- MESSAGGI E MENZIONI --- */
+    /* --- MESSAGGI --- */
     --background-mentioned: rgba(var(--rgb-highlight), 14%) !important;
     --background-mentioned-hover: rgba(var(--rgb-highlight), 20%) !important;
     --background-message-highlight: rgba(var(--rgb-highlight), 30%) !important;
@@ -97,8 +95,8 @@
     --button-secondary-background-hover: rgba(var(--rgb-highlight), 70%) !important;
 
     /* --- UI GENERICA --- */
-    --status-danger-background: var(--status-danger) !important;
-    --status-danger: var(--rgb-close-button) !important; 
+    --status-danger-background: rgb(var(--rgb-close-button)) !important;
+    --status-danger: rgb(var(--rgb-close-button)) !important; 
     --status-warning: var(--afk-color) !important;
     --status-positive: var(--online-color) !important;
     --status-positive-background: var(--online-color);
@@ -112,6 +110,5 @@
     --search-popout-option-filter-text: rgba(var(--rgb-highlight), 70%) !important;
     --search-popout-date-picker-border: 1px solid var(--highlight) !important;
 
-    /* --- Versione --- */
     --ver: "Lande della Discordia (" var(--current-ver)") " var(--file-ver);
 }
