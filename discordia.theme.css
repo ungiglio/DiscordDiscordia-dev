@@ -15,7 +15,7 @@
 :root {
     /* --- BACKGROUND AND IMAGES --- */
     /* Background Image */
-    --custom-image-url: url("https://ungiglio.github.io/DiscordDiscordia-dev-dev/awkglass_code/assets/bgImg.jpg");
+    --custom-image-url: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/bgImg.jpg");
     /* Image blur (default: 8px) */
     --app-blur: 8px;
     
@@ -59,6 +59,7 @@
 /* 4. Chat & Forum */
 @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/message_area.css");
 @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/input_bar.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/forum.css");
 
 /* ======================================================================== */
 /* ADDONS & PLUGIN */
