@@ -6,15 +6,49 @@
  * @source https://github.com/ungiglio/DiscordDiscordia-dev
 */
 
+/* 1. FONTS & SYSTEM CORE IMPORTS */
+/* IMPORTANTE: Questi devono stare SEMPRE in cima al file per funzionare! */
+
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
+/* --- Core Logic --- */
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/variables.css");
+
+/* --- Interfaccia Utente (UI) --- */
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/ui/app_base.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/ui/scrollbars.css");
+
+/* --- Layout --- */
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/layout/sidebar.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/layout/channels.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/layout/members.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/layout/pages.css");
+
+/* --- Chat & Forum --- */
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/message_area.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/input_bar.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/forum.css"); /* Aggiunto */
+
+/* --- Moduli & Plugin --- */
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/modals.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/plugins.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/popouts.css");
+
+/* --- Addons Personalizzati --- */
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/userlist.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/title_bar.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/mentions.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/extras.css");
+/* @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/horizontal_server_list.css"); */
+
+
 /* ======================================================================== */
-/* USER SETTINGS */
+/* 2. USER SETTINGS (CONFIGURAZIONE UTENTE) */
 /* ======================================================================== */
 
 :root {
     /* --- BACKGROUND AND IMAGES --- */
-    /* Background Image */
+    /* Background Image - Corretto l'URL (era -dev-dev) */
     --custom-image-url: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/bgImg.jpg");
     /* Image blur (default: 8px) */
     --app-blur: 8px;
@@ -26,62 +60,15 @@
     --rgb-close-button: 212, 83, 83;
 
     /* --- USER STATUS (RGB format) --- */
-    --rgb-online-color: 31, 92, 171;    /* Online (Blue) */
-    --rgb-afk-color: 255, 255, 0;       /* Assente (Yellow) */
-    --rgb-dnd-color: 255, 0, 0;         /* Non disturbare (Red) */
+    --rgb-online-color: 31, 92, 171;     /* Online (Blue) */
+    --rgb-afk-color: 255, 255, 0;        /* Idle (Yellow) */
+    --rgb-dnd-color: 255, 0, 0;          /* DnD (Red) */
     --rgb-streaming-color: 148, 83, 212; /* Streaming (Purple) */
 
     /* --- TITLE AND ICONS CUSTOMIZATION --- */
     --custom-title-text: "Lande della Discordia";
 
     /* Home/DM Icon (Discord logo left top) */
-    --custom-logo: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/LandeDiscordia.png");            /* normal */
-    --custom-logo-hover: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/LandeDiscordiaHover.png"); /* on hover */
+    --custom-logo: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/LandeDiscordia.png");
+    --custom-logo-hover: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/LandeDiscordiaHover.png");
 }
-
-/* ======================================================================== */
-/* CORE SYSTEM (don't touch) */
-/* ======================================================================== */
-
-/* 1. Logica Variabili e Core */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/variables.css");
-
-/* 2. Interfaccia Utente (UI) */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/ui/app_base.css");
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/ui/scrollbars.css");
-
-/* 3. Layout (Sidebar, Canali) */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/layout/sidebar.css");
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/layout/channels.css");
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/layout/members.css");
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/layout/pages.css");
-
-/* 4. Chat & Forum */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/message_area.css");
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/input_bar.css");
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/forum.css");
-
-/* ======================================================================== */
-/* ADDONS & PLUGIN */
-/* ======================================================================== */
-
-/* Modali */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/modals.css");
-
-/* Plugin BetterDiscord */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/plugins.css");
-
-/* Popouts */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/popouts.css");
-
-/* Lista Utenti Colorata */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/userlist.css");
-
-/* Titolo Personalizzato */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/title_bar.css");
-
-/* Menzioni Colorate */
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/mentions.css");
-
-/* Lista Server Orizzontale (Opzionale - al momento è rotto) */
-/* @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/horizontal_server_list.css"); */

@@ -1,0 +1,55 @@
+/* * CORE MODULES: EXTRAS
+ * Animazioni, Avatar e Dettagli fini recuperati dal v2
+ */
+
+/* === 1. ANIMAZIONI ICONE === */
+/* Rotazione icona Home e impostazioni al passaggio del mouse */
+.homeIcon-tEMBK1:hover, 
+.wrapper_fea832:hover .childWrapper_fea832,
+button[aria-label="Impostazioni utente"]:hover,
+button[aria-label="Impostazioni"]:hover {
+    animation: rotate-icon 1.5s ease-in-out infinite;
+}
+
+@keyframes rotate-icon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Effetto pulsazione sui bottoni verdi (es. chiamate) */
+.colorGreen-29iAKY {
+    animation: pulse-green 2s infinite;
+}
+
+@keyframes pulse-green {
+    0% { box-shadow: 0 0 0 0 rgba(var(--rgb-online-color), 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(var(--rgb-online-color), 0); }
+    100% { box-shadow: 0 0 0 0 rgba(var(--rgb-online-color), 0); }
+}
+
+/* === 2. AVATAR & STATI === */
+/* Rimuove la maschera strana (quella che taglia gli avatar) */
+.mask_c7d26b > foreignObject {
+    mask: none;
+    -webkit-mask: none;
+}
+
+.mask_c7d26b rect {
+    display: none; /* Nasconde i vecchi indicatori di stato per usarne di personalizzati se necessario */
+}
+
+/* Avatar rotondi puliti */
+.wrapper_c51b4e {
+    border-radius: 50%;
+}
+
+/* === 3. FIX VARI === */
+/* Nascondi bottone 'Regala Nitro' nella chat */
+button[aria-label="Invia un regalo"] {
+    display: none !important;
+}
+
+/* Rimuovi bordo strano dai messaggi citati */
+.repliedMessage_f9f2ca:before {
+    border-color: var(--highlight);
+}

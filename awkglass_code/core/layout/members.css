@@ -2,19 +2,32 @@
  * Struttura della colonna membri (Destra)
  */
 
-/* Container Lista Membri */
-.c8ffbb79449f399c-container {
-    border-radius: 0px 0px 8px 0px;
-    background: var(--background-secondary);
+/* Container Principale - Forza Trasparenza */
+.container_b2ce9c, 
+.members_cbd271, 
+.membersWrap_cbd271 {
+    background: transparent !important;
+    background-color: transparent !important;
 }
 
-.c8ffbb79449f399c-members {
-    background: transparent;
-    border-radius: 0px 0px 8px 8px;
+/* Lista Membri interna */
+.members_cbd271 > div {
+    background-color: transparent !important;
 }
 
-/* Nascondi attività/giochi nella lista membri (era nel vecchio codice) */
-[class*='membersGroup']:has([role=button]),
-[class*='member'] [class*='container']:has([class*='badges']) {
+/* Titoli dei ruoli (es. "ADMIN", "ONLINE") */
+.membersGroup_cbd271 {
+    color: var(--channels-default);
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+/* Fix per header membri (se presente) */
+.header_cbd271 {
+    background: transparent !important;
+}
+
+/* Nascondi attività/giochi se desiderato (dal v2) */
+.members_cbd271 .member_a31c43 .container_e9f61e:has(.badges_e9f61e) {
     display: none;
 }
