@@ -1,20 +1,25 @@
-/* * CORE: VARIABLES (FIX COLORI & FONT) */
+/* * CORE: VARIABLES
+ */
 
 :root,
 .theme-dark,
 .theme-light {
 
-    --file-ver: "#20251218";
+    --file-ver: "#20251218-LilacFix";
 
     /* --- MAPPING VARIABILI UTENTE --- */
     --background-image: var(--custom-image-url);
 
-    /* --- FIX COLORI (Il problema del nero) --- */
-    --darkPurple-background: rgba(30, 2, 46, 0.95) !important; 
+    /* --- FIX COLORI --- */
+    --darkPurple-background: rgba(30, 2, 46, 0.85) !important; 
     
-    /* Variabili Categorie */
-    --cat-custom-color: var(--highlight);
-    --cat-custom-color-rgba: var(--rgb-highlight);
+    /* DEFINIZIONE COLORI SPECIFICI RICHIESTI */
+    --header-dark-purple: rgb(110, 40, 160) !important; /* Viola Scuro per Categorie/Membri */
+    --text-lilac: rgb(215, 190, 255) !important;       /* Lilla chiaro per i Canali */
+
+    /* Variabili Categorie (Usa il nuovo viola scuro) */
+    --cat-custom-color: var(--header-dark-purple);
+    --cat-custom-color-rgba: 110, 40, 160;
 
     /* Colori Base */
     --highlight: rgb(var(--rgb-highlight));
@@ -31,7 +36,10 @@
     --background-secondary: rgba(26, 26, 26, 0.500) !important;
     --background-tertiary: rgba(26, 26, 26, 0.815) !important;
     --background-modifier-hover: rgba(20, 20, 20, 0.500);
-    --background-floating: black !important;
+    
+    /* MENU TASTO DESTRO NERI */
+    --background-floating: black !important; 
+    
     --app-border-frame: rgba(255, 255, 255, 0.1) !important;
     
     /* --- ELEMENTI UI --- */
@@ -46,11 +54,13 @@
     --scrollbar-thin-thumb: var(--highlight) !important;
     --scrollbar-auto-thumb: var(--highlight) !important;
     
-    /* --- GESTIONE SEMANTICA COLORI --- */
+    /* --- GESTIONE TESTI (Aggiornata) --- */
     --text-normal: rgb(230, 230, 230) !important;
     --text-muted: rgb(160, 160, 160) !important;
     --text-header: white !important;
-    --text-channel-normal: rgb(150, 150, 150) !important;
+    
+    /* Canali in Lilla */
+    --text-channel-normal: var(--text-lilac) !important; 
     --text-channel-hover: white !important;
     
     --icon-default: rgb(180, 180, 180) !important;

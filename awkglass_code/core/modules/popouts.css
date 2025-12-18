@@ -235,3 +235,38 @@
 .cc46f0f859f26200-addGamePopout {
     background-color: var(--darkPurple-background);
 }
+
+/* === MENU CONTESTUALI (Tasto Destro) === */
+.c1e9c47c23f12ca3-menu {
+    border: solid 1px var(--highlight);
+    border-radius: 8px;
+    background-color: black !important; /* Sfondo NERO forzato */
+}
+
+.subc1e9c47c23f12ca3-menu {
+    border: solid 1px var(--highlight);
+    border-radius: 8px;
+    background-color: black !important; /* Sfondo NERO anche per i sottomenu */
+}
+
+.c1e9c47c23f12ca3-colorDefault:hover {
+    background-color: var(--highlight);
+}
+
+/* Colori Testo Menu */
+:where(.visual-refresh) .c1e9c47c23f12ca3-colorDefault .c1e9c47c23f12ca3-label {
+    color: var(--interactive-normal);
+}
+
+:where(.visual-refresh) .c1e9c47c23f12ca3-colorDefault:hover .c1e9c47c23f12ca3-label {
+    color: white !important;
+}
+
+._09f65b4b8a3f8d26-picker {
+    border: solid 1px var(--highlight);
+    border-radius: 8px;
+    position: fixed;
+    bottom: 73px;
+    left: 328px;
+    background-color: var(--darkPurple-background);
+}

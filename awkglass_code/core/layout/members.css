@@ -1,15 +1,5 @@
 /* * CORE LAYOUT: MEMBERS */
 
-.c8ffbb79449f399c-container {
-    border-radius: 0px 0px 8px 0px;
-    background: var(--background-secondary);
-}
-
-.c8ffbb79449f399c-members {
-    background: transparent;
-    border-radius: 0px 0px 8px 8px;
-}
-
 .c6bf1b7af480dfda-header {
     background: var(--background-primary);
     border-radius: 10px;
@@ -58,4 +48,21 @@
 [class*='member'] [class*='container']:has([class*='badges']) {
     /* get rid of activities in member list */
     display: none;
+}
+
+.c8ffbb79449f399c-container {
+    border-radius: 0px 0px 8px 0px;
+    background: var(--background-secondary);
+}
+
+.c8ffbb79449f399c-members {
+    background: transparent;
+    border-radius: 0px 0px 8px 8px;
+}
+
+/* Titoli Gruppi Membri */
+.membersGroup_cbd271 {
+    color: var(--header-dark-purple) !important;
+    font-weight: bold;
+    padding-top: 20px;
 }
