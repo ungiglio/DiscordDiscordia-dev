@@ -5,7 +5,7 @@
 .theme-dark,
 .theme-light {
 
-    --file-ver: "#20251218-LilacFix";
+    --file-ver: "#20251218";
 
     /* --- MAPPING VARIABILI UTENTE --- */
     --background-image: var(--custom-image-url);
@@ -14,8 +14,8 @@
     --darkPurple-background: rgba(30, 2, 46, 0.85) !important; 
     
     /* DEFINIZIONE COLORI SPECIFICI RICHIESTI */
-    --header-dark-purple: rgb(110, 40, 160) !important; /* Viola Scuro per Categorie/Membri */
-    --text-lilac: rgb(215, 190, 255) !important;       /* Lilla chiaro per i Canali */
+    --header-dark-purple: rgb(110, 40, 160) !important;
+    --text-lilac: rgb(175, 145, 230) !important;
 
     /* Variabili Categorie (Usa il nuovo viola scuro) */
     --cat-custom-color: var(--header-dark-purple);
@@ -71,7 +71,7 @@
 
     /* Mapping Compatibilità */
     --channels-default: var(--text-channel-normal) !important;
-    --channel-icon: var(--icon-default) !important;
+    --channel-icon: var(--text-lilac) !important; 
     --interactive-normal: var(--icon-default) !important;
     --interactive-hover: var(--icon-hover) !important;
     --interactive-muted: rgba(180, 180, 180, 0.5) !important;

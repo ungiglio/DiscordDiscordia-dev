@@ -270,3 +270,30 @@
     left: 328px;
     background-color: var(--darkPurple-background);
 }
+
+/* === TOOLTIPS (Hover Server/Bottoni) === */
+.tooltip_c072e6,
+.tooltip__01384, /* Hash alternativi comuni */
+div[class*="tooltip_"] {
+    /* Sfondo trasparente scuro */
+    background-color: var(--background-tertiary) !important;
+    backdrop-filter: blur(8px);
+    /* Bordo sottile colorato */
+    border: 1px solid var(--highlight);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    /* Testo */
+    color: var(--text-normal);
+}
+
+/* Freccetta del tooltip (la coloriamo come il bordo o la nascondiamo) */
+div[class*="tooltipPointer_"] {
+    border-top-color: var(--highlight) !important;
+}
+
+/* Tooltip Contenuto interno */
+.tooltipContent__79a2d,
+div[class*="tooltipContent_"] {
+    padding: 8px 12px;
+    font-weight: 600;
+}
