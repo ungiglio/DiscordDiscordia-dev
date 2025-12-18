@@ -80,11 +80,10 @@
 
 .voiceChannelsButton__29444 {
     /* show more voice channels button */
-    border: 1px solid var(--custom-channel-icon);
+    border: 1px solid var(--border-subtle);
 }
 
 .voiceChannelsButton__29444:hover {
-    /* show more voice channels button */
     border: 1px solid var(--highlight);
     background: var(--background-secondary);
 }
@@ -127,7 +126,11 @@
 
 .b7f4b43fe1b6e285-reactionSelected {
     /* reaction selected */
-    border: 1px solid var(--custom-channel-icon);
+    border: 1px solid var(--border-strong);
+}
+
+._9a337c84ff86a914-container._9a337c84ff86a914-isOpen {
+    border: 1px solid var(--border-strong);
 }
 
 .c7f964e7e0fc8b47-connection {

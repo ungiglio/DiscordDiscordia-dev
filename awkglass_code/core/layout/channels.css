@@ -4,7 +4,7 @@
 .c69b6db0641110f6-containerDefault:hover ._2ea32c412048f708-link:hover {
     border-radius: 3px;
     background: var(--button-background);
-    color: white;
+    color: var(--text-header); /* Bianco su hover */
 }
 
 ._2ea32c412048f708-modeSelected ._2ea32c412048f708-link,
@@ -54,18 +54,20 @@
     margin-bottom: 20px;
 }
 
+/* === CORREZIONE PRINCIPALE: Nomi Canali === */
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-name {
-    /* channel color */
-    color: var(--channel-icon);
+    /* channel color base */
+    color: var(--text-channel-normal); /* Era --channel-icon */
 }
 
 .c69b6db0641110f6-containerDefault:hover ._2ea32c412048f708-name {
-    /* channel color */
-    color: white;
+    /* channel color hover */
+    color: var(--text-channel-hover);
 }
 
 .c69b6db0641110f6-containerDefault:hover ._2ea32c412048f708-icon {
-    color: white;
+    /* channel icon hover */
+    color: var(--icon-hover);
 }
 
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-modeMuted ._2ea32c412048f708-name {
@@ -73,11 +75,11 @@
 }
 
 .c69b6db0641110f6-containerDefault:hover ._2ea32c412048f708-modeMuted ._2ea32c412048f708-name {
-    color: var(--white);
+    color: var(--text-normal);
 }
 
 ._13cf1aa56cd732d2-container {
-    /*cat vars*/
+    /* Category Headers */
     box-sizing: border-box;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -93,32 +95,26 @@
 }
 
 ._13cf1aa56cd732d2-container:hover {
-    /*cat hover color*/
     color: var(--cat-color);
 }
 
 ._29444ba32c7fbeab-wrapperCommon {
-    /* cat arrow color */
     color: var(--cat-color);
 }
 
 ._29444ba32c7fbeab-icon {
-    /* remove cat arrow */
     display: none;
 }
 
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-modeSelected ._2ea32c412048f708-icon {
-    /*selected channel icon*/
     color: var(--selected-channel-color)
 }
 
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-modeUnreadImportant ._2ea32c412048f708-icon {
-    /*unread channel*/
     color: var(--selected-channel-color)
 }
 
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-modeSelected ._2ea32c412048f708-name {
-    /*selected channel text*/
     color: var(--selected-channel-color)
 }
 
@@ -159,12 +155,10 @@
 }
 
 .f37cb1984c371ee5-animatedContainer {
-    /* server banner */
     border-radius: 10px;
 }
 
 ._2637a2609f343032-container {
-    /* server banner */
     border-radius: 10px;
     background: var(--background-secondary);
 }

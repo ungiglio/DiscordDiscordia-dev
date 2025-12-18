@@ -1,165 +1,117 @@
-/* * CORE: VARIABLES
- * Variabili globali
- */
+/* CORE: VARIABLES */
 
 :root,
 .theme-dark,
 .theme-light {
 
-    --file-ver: "#20251218";
+    --file-ver: "#20251218-SemanticFix";
 
-    /*Background*/
+    /* --- MAPPING VARIABILI UTENTE --- */
     --background-image: var(--custom-image-url);
-    --app-blur: 8px;
-    --button-background: linear-gradient(60deg, var(--highlight), var(--highlight-darker));
-    --button-background-static: var(--highlight);
-    --background-primary: rgba(24, 24, 24, 0.26) !important;
-    --background-secondary: rgba(26, 26, 26, 0.500) !important;
-    --background-tertiary: rgba(26, 26, 26, 0.815) !important;
-    --background-modifier-hover: rgba(20, 20, 20, 0.500);
-    --custom-spoiler-color: rgb(148, 83, 212);
-    --box-shadow: 0 0 10px 0px black;
 
-    /*other*/
+    /* --- FIX VARIABILI & COLORI --- */
+    --darkPurple-background: rgba(30, 2, 46, 0.85) !important; 
+    
+    /* Variabili Categorie (Default) */
+    --cat-custom-color: var(--highlight);
+    --cat-custom-color-rgba: var(--rgb-highlight);
+
+    /* Colori Base */
     --highlight: rgb(var(--rgb-highlight));
     --highlight-darker: hsl(from var(--highlight) calc(h + 15) s calc(l - 35));
-    --text: var(--text-muted) !important;
+    
+    /* Stati Utente */
     --online-color: rgb(var(--rgb-online-color)) !important;
     --afk-color: rgb(var(--rgb-afk-color)) !important;
     --dnd-color: rgb(var(--rgb-dnd-color)) !important;
     --streaming-color: rgb(var(--rgb-streaming-color)) !important;
+
+    /* --- BACKGROUND LAYERS --- */
+    --background-primary: rgba(24, 24, 24, 0.26) !important;
+    --background-secondary: rgba(26, 26, 26, 0.500) !important;
+    --background-tertiary: rgba(26, 26, 26, 0.815) !important;
+    --background-modifier-hover: rgba(20, 20, 20, 0.500);
+    --background-floating: black !important;
+    --app-border-frame: rgba(255, 255, 255, 0.1) !important;
+    
+    /* --- ELEMENTI UI --- */
+    --button-background: linear-gradient(60deg, var(--highlight), var(--highlight-darker));
+    --button-background-static: var(--highlight);
+    --box-shadow: 0 0 10px 0px black;
+    --custom-spoiler-color: rgb(148, 83, 212);
+    --spoiler-hidden-background: var(--custom-spoiler-color) !important;
+    --spoiler-hidden-background-hover: var(--highlight) !important;
+    
+    /* --- SCROLLBARS --- */
     --scrollbar-thin-thumb: var(--highlight) !important;
     --scrollbar-auto-thumb: var(--highlight) !important;
-    --scrollbar-auto-scrollbar-color-thumb: var(--highlight) !important;
-    --scrollbar-thin-track: transparent;
-    --scrollbar-auto-track: transparent;
-    --scrollbar-auto-scrollbar-color-track: transparent;
-    --transition-time: 0.3s;
 
+    /* 1. TESTI (Font Colors) */
+    --text-normal: rgb(230, 230, 230) !important;      /* Testo principale (chiaro) */
+    --text-muted: rgb(160, 160, 160) !important;       /* Testo secondario (grigio) */
+    --text-header: white !important;                   /* Titoli (Bianco puro) */
+    --text-channel-normal: rgb(150, 150, 150) !important; /* Nome canali non letti/inattivi */
+    --text-channel-hover: white !important;            /* Nome canali al passaggio del mouse */
+    
+    /* 2. ICONE (SVG Fills) */
+    --icon-default: rgb(180, 180, 180) !important;     /* Icone standard (hash, ingranaggi) */
+    --icon-hover: white !important;                    /* Icone attive/hover */
+    
+    /* 3. BORDI E LINEE (Dividers) */
+    --border-subtle: rgba(255, 255, 255, 0.15) !important; /* Linee sottili, bordi messaggi */
+    --border-strong: rgba(255, 255, 255, 0.4) !important;  /* Bordi evidenziati */
+
+    /* Mapping vecchie variabili (per compatibilità) su quelle nuove */
+    --channels-default: var(--text-channel-normal) !important;
+    --channel-icon: var(--icon-default) !important; /* Ora channel-icon è SOLO per le icone */
+    --interactive-normal: var(--icon-default) !important;
+    --interactive-hover: var(--icon-hover) !important;
+    --interactive-muted: rgba(180, 180, 180, 0.5) !important;
+
+    /* --- LOGHI E BRAND --- */
     --logo-primary: var(--highlight) !important;
     --control-brand-foreground: var(--highlight) !important;
-    --control-brand-foreground-new: var(--highlight) !important;
+    --bg-brand: var(--highlight) !important;
+    --background-brand: var(--highlight) !important;
+
+    /* --- MESSAGGI E MENZIONI --- */
     --background-mentioned: rgba(var(--rgb-highlight), 14%) !important;
     --background-mentioned-hover: rgba(var(--rgb-highlight), 20%) !important;
-    --background-message-hover: color-mix(in oklab, hsl(var(--primary-900-hsl) / 0.06) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%) / 0.06) var(--theme-base-color-amount, 0%)) !important;
     --background-message-highlight: rgba(var(--rgb-highlight), 30%) !important;
     --background-message-highlight-hover: rgba(var(--rgb-highlight), 40%) !important;
     --background-message-automod: rgba(var(--rgb-highlight), 20%) !important;
-    --background-message-automod-hover: rgba(var(--rgb-highlight), 40%) !important;
-    --channeltextarea-background: color-mix(in oklab, var(--primary-560) 100%, var(--theme-base-color, black) var(--theme-base-color-amount, 0%)) !important;
-    --text-link: var(--highlight) !important;
-    --text-link-low-saturation: rgba(var(--rgb-highlight), 50%) !important;
-    --text-positive: var(--online-color) !important;
-    --text-warning: var(--afk-color) !important;
-    --text-danger: var(--dnd-color) !important;
-    --text-brand: var(--highlight) !important;
-    --channels-default: var(--text) !important;
-    --interactive-muted: rgba(180, 180, 180, 0.493) !important;
-    --button-danger-background-disabled: rgba(var(--rgb-close-button), 20%) !important;
+    --background-message-hover: rgba(20, 20, 20, 0.4) !important;
+    
+    /* --- PULSANTI --- */
     --button-danger-background: rgba(var(--rgb-close-button), 100%) !important;
     --button-danger-background-hover: rgba(var(--rgb-close-button), 70%) !important;
     --button-danger-background-active: rgba(var(--rgb-close-button), 100%) !important;
-    --button-outline-danger-border: rgba(var(--rgb-close-button), 100%) !important;
-    --button-outline-danger-background: rgba(var(--rgb-close-button), 50%) !important;
-    --button-outline-danger-background-hover: rgba(var(--rgb-close-button), 100%) !important;
-    --button-outline-danger-background-active: rgba(var(--rgb-close-button), 100%) !important;
-    --button-outline-danger-text: rgb(255, 255, 255) !important;
-    --button-outline-danger-text-hover: rgb(255, 255, 255) !important;
-    --button-outline-danger-text-active: rgba(var(--rgb-close-button), 100%) !important;
-    --button-outline-danger-border-hover: rgba(var(--rgb-close-button), 70%) !important;
-    --button-outline-danger-border-active: rgba(var(--rgb-close-button), 100%) !important;
-    --button-positive-background-disabled: rgba(var(--rgb-online-color), 20%) !important;
+    
     --button-positive-background: rgba(var(--rgb-online-color), 20%) !important;
     --button-positive-background-hover: rgba(var(--rgb-online-color), 70%) !important;
-    --button-positive-background-active: rgba(var(--rgb-online-color), 100%) !important;
-    --button-outline-positive-border: rgba(var(--rgb-online-color), 50%) !important;
-    --button-outline-positive-background: rgba(var(--rgb-online-color), 50%) !important;
-    --button-outline-positive-background-hover: rgba(var(--rgb-online-color), 70%) !important;
-    --button-outline-positive-background-active: rgba(var(--rgb-online-color), 100%) !important;
-    --button-outline-positive-text: rgba(var(--rgb-online-color), 50%) !important;
-    --button-outline-positive-text-hover: rgba(var(--rgb-online-color), 70%) !important;
-    --button-outline-positive-text-active: rgba(var(--rgb-online-color), 100%) !important;
-    --button-outline-positive-border-hover: rgba(var(--rgb-online-color), 70%) !important;
-    --button-outline-positive-border-active: rgba(var(--rgb-online-color), 100%) !important;
-    --button-primary-background-disabled: rgba(var(--rgb-highlight), 20%) !important;
+    
     --button-primary-background: rgba(var(--rgb-highlight), 95%) !important;
-    --control-background-primary-default: rgba(var(--rgb-highlight), 95%) !important;
-    --control-background-primary-hover: rgba(var(--rgb-highlight), 80%) !important;
-    --control-background-border-default: rgba(var(--rgb-highlight), 95%) !important;
-    --control-background-border-hover: rgba(var(--rgb-highlight), 80%) !important;
     --button-primary-background-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-primary-background-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-primary-border: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-primary-background: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-primary-background-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-primary-background-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-primary-text: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-primary-text-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-primary-text-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-primary-border-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-primary-border-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-secondary-background-disabled: rgba(var(--rgb-highlight), 20%) !important;
+    
     --button-secondary-background: rgba(var(--rgb-highlight), 20%) !important;
     --button-secondary-background-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-secondary-background-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-secondary-border: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-secondary-background: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-secondary-background-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-secondary-background-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-secondary-text: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-secondary-text-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-secondary-text-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-secondary-border-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-secondary-border-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-brand-background-disabled: rgba(var(--rgb-highlight), 20%) !important;
-    --button-brand-background: rgba(var(--rgb-highlight), 20%) !important;
-    --button-brand-background-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-brand-background-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-brand-border: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-brand-background: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-brand-background-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-brand-background-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-brand-text: rgba(var(--rgb-highlight), 50%) !important;
-    --button-outline-brand-text-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-brand-text-active: rgba(var(--rgb-highlight), 100%) !important;
-    --button-outline-brand-border-hover: rgba(var(--rgb-highlight), 70%) !important;
-    --button-outline-brand-border-active: rgba(var(--rgb-highlight), 100%) !important;
+
+    /* --- UI GENERICA --- */
+    --status-danger-background: var(--status-danger) !important;
+    --status-danger: var(--rgb-close-button) !important; 
+    --status-warning: var(--afk-color) !important;
+    --status-positive: var(--online-color) !important;
+    --status-positive-background: var(--online-color);
+    
+    --menu-item-default-active-bg: var(--highlight) !important;
+    --background-channel-selected: rgba(var(--rgb-highlight), 10%) !important;
+
+    /* --- Search Popout --- */
     --search-popout-option-user-nickname: var(--highlight) !important;
     --search-popout-option-user-username: rgba(var(--rgb-highlight), 70%) !important;
     --search-popout-option-filter-text: rgba(var(--rgb-highlight), 70%) !important;
     --search-popout-date-picker-border: 1px solid var(--highlight) !important;
-    --status-danger-background: var(--status-danger) !important;
-    --channel-header-color: var(--custom-channel-header-color) !important;
-    --channel-icon: var(--custom-channel-icon) !important;
-    --selected-channel-color: var(--custom-selected-channel-color) !important;
-    --cat-color: var(--cat-custom-color) !important;
-    --cat-color-rgba: var(--cat-custom-color-rgba) !important;
-    --status-danger: var(--status-danger-rgb) !important;
-    --status-warning: var(--afk-color) !important;
-    --status-positive: var(--online-color) !important;
-    --menu-item-default-active-bg: var(--highlight) !important;
-    --menu-item-default-hover-bg: var(--highlight) !important;
-    --background-channel-selected: rgba(var(--rgb-highlight), 10%) !important;
-    --app-border-frame: color-mix(in oklab, hsl(var(--opacity-24-hsl)/0.23921568627450981) 100%, hsl(var(--theme-base-color-hsl, 0 0% 0%)/0.23921568627450981) var(--theme-base-color-amount, 0%)) !important;
-    --status-positive-background: var(--online-color);
 
-    --bg-brand: var(--highlight) !important;
-    --button-filled-brand-background: var(--highlight) !important;
-    --background-brand: var(--highlight) !important;
-    --bg-base-tertiary: var(--background-secondary) !important;
-    --bg-base-secondary: var(--background-tertiary) !important;
-    --card-primary-bg: var(--background-primary) !important;
-    --background-base-lower: var(--background-tertiary) !important;
-    --background-floating: black !important;
-    --background-surface-higher: black !important;
-    --background-base-low: var(--background-secondary) !important;
-    --background-secondary-alt: var(--background-secondary) !important;
-    --checkbox-border-checked: var(--online-color) !important;
-    --checkbox-background-checked: var(--online-color) !important;
-    --background-surface-high: var(--background-tertiary) !important;
-    --text-feedback-positive: var(--online-color) !important;
-    --spoiler-hidden-background: var(--custom-spoiler-color) !important;
-    --spoiler-hidden-background-hover: var(--highlight) !important;
-
+    /* --- Versione --- */
     --ver: "Lande della Discordia (" var(--current-ver)") " var(--file-ver);
 }
