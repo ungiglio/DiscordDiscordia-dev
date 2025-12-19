@@ -92,6 +92,7 @@
     --background-surface-high: var(--background-tertiary) !important;
     --background-surface-higher: var(--background-tertiary) !important;
     --background-base-low: var(--background-tertiary) !important;
+    --background-base-lower: var(--background-secondary) !important;
     --card-background-default: rgba(20, 20, 20, 0.4) !important;
 
     /* --- PULSANTI --- */

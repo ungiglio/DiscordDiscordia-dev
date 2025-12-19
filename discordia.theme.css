@@ -7,8 +7,6 @@
 */
 
 /* 1. FONTS & SYSTEM CORE IMPORTS */
-/* IMPORTANTE: Questi devono stare SEMPRE in cima al file per funzionare! */
-
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
 /* --- Core Logic --- */
@@ -27,7 +25,7 @@
 /* --- Chat & Forum --- */
 @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/message_area.css");
 @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/input_bar.css");
-@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/forum.css"); /* Aggiunto */
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/chat/forum.css");
 
 /* --- Moduli & Plugin --- */
 @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/modals.css");
@@ -39,6 +37,8 @@
 @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/title_bar.css");
 @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/mentions.css");
 @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/extras.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/notifications.css");
+@import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/user_panel_version.css");
 /* @import url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/core/modules/horizontal_server_list.css"); */
 
 
@@ -61,9 +61,9 @@
 
     /* --- USER STATUS (RGB format) --- */
     --rgb-online-color: 31, 92, 171;     /* Online (Blue) */
-    --rgb-afk-color: 255, 255, 0;        /* Idle (Yellow) */
-    --rgb-dnd-color: 255, 0, 0;          /* DnD (Red) */
-    --rgb-streaming-color: 148, 83, 212; /* Streaming (Purple) */
+    --rgb-afk-color: 220, 163, 46;       /* Idle (Yellow) */
+  --rgb-dnd-color: 224, 58, 62;          /* DnD (Red) */
+  --rgb-streaming-color: 188, 19, 254;   /* Streaming X (Purple) */
 
     /* --- TITLE AND ICONS CUSTOMIZATION --- */
     --custom-title-text: "Lande della Discordia";
