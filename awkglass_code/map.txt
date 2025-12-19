@@ -18,4 +18,6 @@ awkglass_code/
         ├── userlist.css
         ├── horizontal_server_list.css
         ├── title_bar.css
+        ├── notifications.css
+        ├── user_panel_version.css
         └── mentions.css
