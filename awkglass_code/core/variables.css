@@ -89,6 +89,7 @@
     --background-message-highlight-hover: rgba(var(--rgb-highlight), 40%) !important;
     --background-message-automod: rgba(var(--rgb-highlight), 20%) !important;
     --background-message-hover: rgba(20, 20, 20, 0.4) !important;
+    --background-surface-high: var(--background-tertiary) !important;
     
     /* --- PULSANTI --- */
     --button-danger-background: rgba(var(--rgb-close-button), 100%) !important;
