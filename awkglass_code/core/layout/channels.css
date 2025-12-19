@@ -18,7 +18,7 @@
 
 ._2ea32c412048f708-modeUnreadImportant ._2ea32c412048f708-name,
 ._2ea32c412048f708-modeUnreadImportant:hover ._2ea32c412048f708-name {
-    color: var(--selected-channel-color);
+    color: var(--highlighted-channel-color);
     font-weight: var(--font-weight-semibold-1x-light-theme, 550);
 }
 
@@ -41,7 +41,7 @@
 
 ._2ea32c412048f708-unread,
 ._2ea32c412048f708-wrapper:hover ._2ea32c412048f708-unread {
-    background-color: var(--selected-channel-color);
+    background-color: var(--highlighted-channel-color);
     border-radius: 1.5px;
     left: -8px;
 }
@@ -83,15 +83,15 @@
 }
 
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-modeSelected ._2ea32c412048f708-icon {
-    color: var(--selected-channel-color)
+    color: var(--highlighted-channel-color)
 }
 
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-modeUnreadImportant ._2ea32c412048f708-icon {
-    color: var(--selected-channel-color)
+    color: var(--highlighted-channel-color)
 }
 
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-modeSelected ._2ea32c412048f708-name {
-    color: var(--selected-channel-color)
+    color: var(--highlighted-channel-color)
 }
 
 .c69b6db0641110f6-containerDefault ._2ea32c412048f708-modeSelected ._2ea32c412048f708-wrapper {
@@ -150,11 +150,11 @@
 
 ._270d7a28db32b312-checkIcon,
 ._270d7a28db32b312-memberCount {
-    background-color: var(--selected-channel-color);
+    background-color: var(--highlighted-channel-color);
 }
 
 ._270d7a28db32b312-optionButtonWrapper._270d7a28db32b312-selected {
-    border-color: var(--selected-channel-color);
+    border-color: var(--highlighted-channel-color);
 }
 
 

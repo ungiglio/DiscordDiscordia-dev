@@ -117,14 +117,14 @@
     margin-top: 10px;
     background: rgba(105, 15, 133, 0.8);
     border-radius: 10px;
-    border: 1px solid var(--selected-channel-color);
+    border: 1px solid var(--highlighted-channel-color);
 }
 
 .f75fb00fb7356cbe-chat ._0b56311ebc6682e2-header {
     /* channels & roles tab */
     background: var(--background-secondary) !important;
     border-radius: 10px;
-    border: 1px solid var(--selected-channel-color);
+    border: 1px solid var(--highlighted-channel-color);
 }
 
 .c0e32c5cffed3d9f-header,

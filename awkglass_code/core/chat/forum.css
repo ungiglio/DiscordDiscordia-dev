@@ -37,7 +37,7 @@
 
 .f369dba7416c67f0-mainCard:hover {
     /*forum posts cards hover */
-    border: 1px solid var(--selected-channel-color) !important;
+    border: 1px solid var(--highlighted-channel-color) !important;
     background: var(--bg-mod-faint) !important;
 }
 

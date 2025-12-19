@@ -56,8 +56,8 @@
     /* --- MAIN COLORS --- */
     /* Main Color (Purple default: 148, 83, 212) */
     --rgb-highlight: 148, 83, 212;
-    /* Danger/Close Button color (Red) */
-    --rgb-close-button: 212, 83, 83;
+    /* Danger/Close Button color */
+    --rgb-close-button: 152, 51, 255;
 
     /* --- USER STATUS (RGB format) --- */
     --rgb-online-color: 31, 92, 171;     /* Online (Blue) */

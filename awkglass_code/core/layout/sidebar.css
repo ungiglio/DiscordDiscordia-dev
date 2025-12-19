@@ -1,7 +1,7 @@
 /* * CORE LAYOUT: SIDEBAR */
 
 #app-mount ._5e434347c823b592-guilds [class*=pill] span[style*="height: 40"] {
-    background-color: var(--selected-channel-color);
+    background-color: var(--highlighted-channel-color);
 }
 
 ._5e434347c823b592-sidebarList {

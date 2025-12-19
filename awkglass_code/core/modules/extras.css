@@ -28,7 +28,7 @@ span._67645e1530f1195d-button._67645e1530f1195d-enabled._67645e1530f1195d-redGlo
 
 ._421edea01cb52e16-wordmark {
     /* Applica il font al contenitore */
-    color: var(--selected-channel-color);
+    color: var(--highlighted-channel-color);
     font-family: "Pirata One", system-ui !important;
 }
 
