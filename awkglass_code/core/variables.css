@@ -10,7 +10,7 @@
     --background-image: var(--custom-image-url);
 
     /* --- FIX COLORI --- */
-    --darkPurple-background: rgb(30, 2, 46) !important; 
+    --darkPurple-background: rgb(46, 0, 58) !important; 
     
     /* DEFINIZIONE COLORI SPECIFICI RICHIESTI */
     --header-dark-purple: rgb(147, 106, 201) !important;
