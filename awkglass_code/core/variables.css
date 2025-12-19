@@ -1,11 +1,10 @@
-/* * CORE: VARIABLES
- */
+/* CORE: VARIABLES */
 
 :root,
 .theme-dark,
 .theme-light {
 
-    --file-ver: "#20251218";
+    --file-ver: "#20251219";
 
     /* --- MAPPING VARIABILI UTENTE --- */
     --background-image: var(--custom-image-url);
@@ -92,7 +91,9 @@
     --background-message-hover: rgba(20, 20, 20, 0.4) !important;
     --background-surface-high: var(--background-tertiary) !important;
     --background-surface-higher: var(--background-tertiary) !important;
-    
+    --background-base-low: var(--background-tertiary) !important;
+    --card-background-default: rgba(20, 20, 20, 0.4) !important;
+
     /* --- PULSANTI --- */
     --button-danger-background: rgba(var(--rgb-close-button), 100%) !important;
     --button-danger-background-hover: rgba(var(--rgb-close-button), 70%) !important;

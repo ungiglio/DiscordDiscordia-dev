@@ -257,3 +257,8 @@
     /* server events list svg color */
     fill: var(--icon-muted);
 }
+
+/* settings menu gradient */
+._409aa1aeee28d5f7-fixedContent:after {
+    background: linear-gradient(to bottom, var(--darkPurple-background), transparent);
+}

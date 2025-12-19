@@ -71,4 +71,7 @@
     /* Home/DM Icon (Discord logo left top) */
     --custom-logo: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/LandeDiscordia.png");
     --custom-logo-hover: url("https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/LandeDiscordiaHover.png");
+
+    --show-dev-panel-info-static: 0; /* Set to 1 to show the static version, 0 to hide | (NOTE: for static to work also hover need to be 1) */
+    --show-dev-panel-info-hover: 1; /* Set to 1 to show the static or hover version, put 0 to hide */
 }
