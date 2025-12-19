@@ -15,23 +15,6 @@
     background-color: var(--highlight);
 }
 
-._908e20001ad67812-isUnread {
-    border: 1px solid var(--border-subtle);
-}
-
-._908e20001ad67812-content {
-    color: var(--text-muted);
-    background: var(--background-primary);
-    border: 1px solid var(--border-subtle);
-    border-radius: 3px;
-}
-
-._908e20001ad67812-isUnread ._908e20001ad67812-content {
-    backdrop-filter: blur(100px);
-    background-color: var(--background-tertiary);
-    color: var(--text-muted);
-}
-
 .f7ecaca5c80dbf3a-wrapper {
     /* message:hover popup */
     background: var(--darkPurple-background);
@@ -167,17 +150,6 @@
     border: 1px solid var(--border-subtle);
 }
 
-._908e20001ad67812-endCap {
-    /* new msg divider end */
-    color: var(--text-muted) !important;
-    background: var(--background-primary);
-    border: 1px solid var(--border-subtle);
-    border-radius: 3px;
-    padding: 1.5px 4px;
-    backdrop-filter: blur(100px);
-    right: -46px;
-}
-
 ._5126c0cd07f243a0-divider {
     margin-right: 50px;
 }
@@ -216,4 +188,23 @@ span[class*="timestampInline_"] time::before {
 ._623de82e76ad7f82-embedFull {
     background: var(--background-secondary);
     border-radius: 5px;
+}
+
+
+
+/* New Messages Divider */
+._908e20001ad67812-content {
+    background: transparent; 
+    border: 1px solid var(--border-subtle);
+    border-radius: 3px;
+}
+
+._908e20001ad67812-endCap {
+    color: var(--cat-custom-color) !important;
+    background: transparent;
+    border: 1px solid var(--border-subtle);
+    border-radius: 3px;
+    padding: 1.5px 4px;
+    backdrop-filter: blur(100px);
+    right: -46px;
 }

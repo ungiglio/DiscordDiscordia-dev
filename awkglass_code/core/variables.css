@@ -14,12 +14,12 @@
     --darkPurple-background: rgb(30, 2, 46) !important; 
     
     /* DEFINIZIONE COLORI SPECIFICI RICHIESTI */
-    --header-dark-purple: rgb(110, 40, 160) !important;
+    --header-dark-purple: rgb(147, 106, 201) !important;
     --text-lilac: rgb(175, 145, 230) !important;
 
     /* Variabili Categorie (Usa il nuovo viola scuro) */
     --cat-custom-color: var(--header-dark-purple);
-    --cat-custom-color-rgba: 110, 40, 160;
+    --cat-custom-color-rgba: 147, 106, 201;
 
     /* Colori Base */
     --highlight: rgb(var(--rgb-highlight));
@@ -91,6 +91,7 @@
     --background-message-automod: rgba(var(--rgb-highlight), 20%) !important;
     --background-message-hover: rgba(20, 20, 20, 0.4) !important;
     --background-surface-high: var(--background-tertiary) !important;
+    --background-surface-higher: var(--background-tertiary) !important;
     
     /* --- PULSANTI --- */
     --button-danger-background: rgba(var(--rgb-close-button), 100%) !important;

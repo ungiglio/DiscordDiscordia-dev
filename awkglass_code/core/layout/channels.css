@@ -18,7 +18,7 @@
 
 ._2ea32c412048f708-modeUnreadImportant ._2ea32c412048f708-name,
 ._2ea32c412048f708-modeUnreadImportant:hover ._2ea32c412048f708-name {
-    color: var(--highlighted-channel-color);
+    color: var(--highlighted-channel-color) !important;
     font-weight: var(--font-weight-semibold-1x-light-theme, 550);
 }
 

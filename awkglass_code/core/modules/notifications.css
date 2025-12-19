@@ -4,3 +4,13 @@
     border-radius: 1.5px;
     left: -8px;
 }
+
+._908e20001ad67812-isUnread {
+    border: 1px solid var(--cat-custom-color);
+}
+
+._908e20001ad67812-isUnread ._908e20001ad67812-content {
+    backdrop-filter: blur(100px);
+    background-color: var(--background-secondary);
+    color: var(--cat-custom-color);
+}
