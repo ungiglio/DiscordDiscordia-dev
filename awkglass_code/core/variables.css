@@ -53,7 +53,7 @@
     --scrollbar-thin-thumb: var(--highlight) !important;
     --scrollbar-auto-thumb: var(--highlight) !important;
     
-    /* --- GESTIONE TESTI (Aggiornata) --- */
+    /* --- GESTIONE TESTI --- */
     --text-normal: rgb(230, 230, 230) !important;
     --text-muted: rgb(160, 160, 160) !important;
     --text-header: white !important;

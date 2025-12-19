@@ -1,9 +1,12 @@
 /**
- * @name Discord Discordia
+ * @name Lande della Discordia
  * @author ungiglio
  * @version 25.1
- * @description Un tema trasparente, modulare e altamente personalizzabile.
- * @source https://github.com/ungiglio/DiscordDiscordia-dev
+ * @source https://github.com/ungiglio/DiscordDiscordia/
+ * @website https://ungiglio.github.io/DiscordDiscordia/
+ * @description Lande della Discordia implements a glass purple and lightblue details on your client!
+ * @authorId 769144538107215872
+ * @invite DDaRdZwB4h
 */
 
 /* ======================================================================== */
@@ -12,24 +15,26 @@
 
 @import url('https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/loader.css');
 
+
 /* ======================================================================== */
 /* 2. USER SETTINGS (CONFIGURAZIONE UTENTE) */
 /* ======================================================================== */
 
 :root {
     /* --- BACKGROUND AND IMAGES --- */
-    /* Background Image - Corretto l'URL (era -dev-dev) */
+    /* Background Image */
     --custom-image-url: url('https://ungiglio.github.io/DiscordDiscordia-dev/awkglass_code/assets/bgImg.jpg');
-    
+
     /* Image blur (default: 8px) */
     --app-blur: 8px;
     
+
     /* --- MAIN COLORS --- */
-    /* Main Color (Purple default: 148, 83, 212) */
-    --rgb-highlight: 148, 83, 212;
+    --rgb-highlight: 178, 102, 255;
 
     /* Danger/Close Button color */
     --rgb-close-button: 152, 51, 255;
+
 
     /* --- USER STATUS (RGB format) --- */
     --rgb-online-color: 31, 92, 171;        /* Online (Blue) */
@@ -37,6 +42,7 @@
     --rgb-dnd-color: 224, 58, 62;           /* DnD (Red) */
     --rgb-streaming-color: 188, 19, 254;    /* Streaming (Purple) */
 
+    
     /* --- TITLE AND ICONS CUSTOMIZATION --- */
     --custom-title-text: "Lande della Discordia";                   /* The custom text you want to display */
     --custom-title-font-size: 14px;                                 /* The size in pixels of the custom title text */
